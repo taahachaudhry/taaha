@@ -8,3 +8,6 @@ usernames: {
   github:  "taahachaudhry",
   linkedin: "taahachaudhry"
 }
+
+production_url : http://taahachaudhry.github.io/
+BASE_PATH : http://taahachaudhry.github.io/
