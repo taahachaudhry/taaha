@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>{{ site.title }}</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="about-container">
+      <header class="profile">
+        <div class="photo"></div>
+        <h1 class="name">{{ page.title }}</h1>
+        <p>{{ page.tagline }}</p>
+      </header>
+
+      <p class="about">
+        <span>{{ page.experience }}</span><br><br>
+        Check out my <a href="/assets/pdf/TaahaChaudhryDesignResume.pdf" target="_blank" id="resume">resume</a>. <br>
+        Here is my <a href="http://linkedin.com/in/{{ site.usernames.linkedin }}/" target="_blank" id="linkedin">linkedin</a>.<br>
+        See some of my <a href="#timeline" id="work">work</a>. <br>
+        Let's work <a href="mailto:{{ site.email }}" id="email">together</a>!
+      </p>
+    </div>
+
+    <div id="timeline-container" class="timeline-container">
+
+      <section class="timeline-block">
+        <h4 class="year">{{ page.education.year }}</h4>
+        <h2 class="title">
+          <i class="fa fa-circle-o fa-lg"></i>{{ page.education.university }}
+        </h2>
+        <h4 class="sub-title">{{ page.education.degree }}</h4>
+      </section>
+
+      <section class="timeline-block minor">
+        <div class="details">
+          <a href="{{ page.project1.link }}" target="_blank">
+            <img src="/assets/images/venmo/venmo.png" />
+            <span class="image-title">{{ page.project1.title }}</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="timeline-block">
+        <h4 class="year">{{ page.work1.year }}</h4>
+        <h2 class="title">
+          <i class="fa fa-circle-o fa-lg"></i>{{ page.work1.company }}
+        </h2>
+        <p class="details">
+          Clients include: <b>{{ page.work1.clients }}</b>
+        </p>
+      </section>
+
+      <section class="timeline-block minor">
+        <div class="details">
+          <a href="{{ page.work1.carsharingLink }}" target="_blank">
+            <img src="/assets/images/ridecell/gig-carshare.png" />
+            <span class="image-title">{{ page.work1.gigCarsharingTitle }}</span>
+          </a>
+        </div>
+
+        <div class="details">
+          <a href="{{ page.work1.carsharingLink }}" target="_blank">
+            <img src="/assets/images/ridecell/bmw-carshare.png" />
+            <span class="image-title">{{ page.work1.bmwCarsharingTitle }}</span>
+          </a>
+        </div>
+
+        <div class="details">
+          <a href="{{ page.work1.ridesharingLink }}" target="_blank">
+            <img src="/assets/images/ridecell/ridesharing-app.png" />
+            <span class="image-title">{{ page.work1.ridesharingAppTitle }}</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="timeline-block minor">
+        <div class="details">
+          <a href="{{ page.work1.dispatchLink }}" target="_blank">
+            <img src="/assets/images/ridecell/carsharing-dispatch.png" />
+            <span class="image-title">{{ page.work1.dispatchCarsharingTitle }}</span>
+          </a>
+        </div>
+
+        <div class="details">
+          <a href="{{ page.work1.dispatchLink }}" target="_blank">
+            <img src="/assets/images/ridecell/ridesharing-dispatch.png" />
+            <span class="image-title">{{ page.work1.dispatchRidesharingTitle }}</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="timeline-block">
+        <h4 class="year full">{{ page.work2.year }}</h4>
+        <h2 class="title">
+          <i class="fa fa-circle-o fa-lg"></i>{{ page.work2.company }}
+        </h2>
+        <p class="details">
+          Clients include: <b>{{ page.work2.clients }}</b>
+        </p>
+      </section>
+
+      <section class="timeline-block minor">
+        <h2 class="title">
+          <i class="fa fa-circle"></i>
+          <a href="{{ page.work2.udnLink }}" target="_blank">
+            {{ page.work2.ericssonProjectTitle }}
+          </a>
+        </h2>
+
+        <div class="details">
+          <a href="{{ page.work2.udnLink1 }}" target="_blank">
+            <img src="/assets/images/idean/ericsson-udn-1.png" />
+            <span class="image-title">{{ page.work2.udnTitle1 }}</span>
+          </a>
+        </div>
+
+        <div class="details">
+          <a href="{{ page.work2.udnLink2 }}" target="_blank">
+            <img src="/assets/images/idean/ericsson-udn-2.png" />
+            <span class="image-title">{{ page.work2.udnTitle2 }}</span>
+          </a>
+        </div>
+
+        <div class="details">
+          <a href="{{ page.work2.udnLink3 }}" target="_blank">
+            <img src="/assets/images/idean/ericsson-udn-3.png" />
+            <span class="image-title">{{ page.work2.udnTitle3 }}</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="timeline-block minor">
+        <h2 class="title">
+          <i class="fa fa-circle"></i>
+          <a href="{{ page.work2.vmwareLink }}" target="_blank">
+            {{ page.work2.vmwareTitle }}
+          </a>
+        </h2>
+
+        <div class="details">
+          <a href="{{ page.work2.vmwareLink }}" target="_blank">
+            <img src="/assets/images/idean/vmware-1.png" />
+            <span class="image-title">{{ page.work2.vmwareProjectTitle }}</span>
+          </a>
+        </div>
+
+        <div class="details">
+          <a href="{{ page.work2.vmwareLink }}" target="_blank">
+            <img src="/assets/images/idean/vmware-2.png" />
+            <span class="image-title">{{ page.work2.vmwareProjectTitle }}</span>
+          </a>
+        </div>
+
+        <div class="details">
+          <a href="{{ page.work2.vmwareLink }}" target="_blank">
+            <img src="/assets/images/idean/vmware-3.png" />
+            <span class="image-title">{{ page.work2.vmwareProjectTitle }}</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="footer">
+      <div class="quote-container">
+        <p id="quote"></p>
+        <p id="author"></p>
+      </div>
+
+      <ul class="social-icons">
+        <li><a href="mailto:tbchaudhry@ucdavis.edu" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
+        <li><a href="http://www.linkedin.com/in/taahachaudhry" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+        <li><a href="https://github.com/taahachaudhry" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

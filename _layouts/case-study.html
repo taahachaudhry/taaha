@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>{{ page.title }}</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="case-study-container">
+      <div class="intro">
+        {{ page.intro.image }}
+        <h2>{{ page.intro.tagline }}</h2>
+      </div>
+
+      <div class="section design-goals">
+        <h2 class="title">{{ page.design-goals.title }}</h2>
+        <p>{{ page.design-goals.content }}</p>
+      </div>
+
+      <div class="section user-research">
+        <h2 class="title">{{ page.user-research.title }}</h2>
+        <p>{{ page.user-research.content }}</p>
+      </div>
+
+      <div class="section personas">
+        <h2 class="title">{{ page.personas.title }}</h2>
+        {{ page.personas.content }}
+      </div>
+
+      <div class="section journey-maps">
+        <h2 class="title">{{ page.journey-maps.title }}</h2>
+        {{ page.journey-maps.content }}
+      </div>
+
+      <div class="section solutions">
+        <h2 class="title">{{ page.solutions.title }}</h2>
+        <p>{{ page.solutions.solution-1 }}</p>
+        <p>{{ page.solutions.solution-2 }}</p>
+        <p>{{ page.solutions.solution-3 }}</p>
+        <p>{{ page.solutions.solution-4 }}</p>
+        <p>{{ page.solutions.solution-5 }}</p>
+        <p>{{ page.solutions.solution-6 }}</p>
+      </div>
+
+      <div class="section wireframes">
+        <h2 class="title">{{ page.wireframes.title }}</h2>
+        <p>{{ page.wireframes.content }}</p>
+      </div>
+
+      <div class="section visuals">
+        <h2 class="title">{{ page.visuals.title }}</h2>
+        <p>{{ page.visuals.content }}</p>
+      </div>
+
+      <div class="section prototype">
+        <h2 class="title">{{ page.prototype.title }}</h2>
+        <p>{{ page.prototype.content }}</p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+.case-study-container {
+  position: relative;
+  padding: 2em 7em;
+  margin: 0 auto;
+  max-width: 1024px;
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+
+    h2 {
+      color: $venmo-blue;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 15em;
+    }
+  }
+
+  .section {
+    padding: 1em 0;
+
+    .title {
+      padding-bottom: 0.5em;
+      text-transform: uppercase;
+    }
+
+    .emphasize {
+      font-size: 1.25em;
+      font-weight: 400;
+      color: $venmo-blue;
+    }
+
+    img {
+      display: block;
+      padding-bottom: 0.5em;
+      width: 100%;
+      max-width: 55em;
+    }
+
+    a {
+      color: $link-blue;
+      text-decoration: underline;
+    }
+  }
+
+  .solutions {
+    img {
+      display: inline-block;
+      margin: 1em 1em 1em 0;
+      max-width: 10em;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .case-study-container {
+    padding: 2em;
+
+    .intro {
+      display: block;
+
+      img {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

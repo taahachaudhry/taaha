@@ -1,0 +1,10 @@
+url: "http://taaha.me" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Taaha Chaudhry" # the name of your site, e.g. ACME Corp.
+email: "tbchaudhry@ucdavis.edu"
+version: 3.0.0
+
+usernames: {
+  github:  "taahachaudhry",
+  linkedin: "taahachaudhry"
+}

@@ -1,0 +1,31 @@
+.about-container {
+  max-width: 40em;
+  padding: 2em 3em;
+  margin: 0 auto;
+  text-align: center;
+
+  .profile {
+    padding-bottom: 1em;
+  }
+
+  .photo {
+    width: 10em;
+    height: 10em;
+    margin: 0 auto 1em;
+    background: url('/assets/images/profile.JPG');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+  }
+
+  .name {
+    color: $header-blue;
+  }
+}
+
+.about {
+  a {
+    color: $site-blue;
+    text-decoration: underline;
+  }
+}
