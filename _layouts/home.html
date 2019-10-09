@@ -41,6 +41,13 @@
       </section>
 
       <section class="timeline-block minor">
+        <h2 class="title">
+          <i class="fa fa-circle"></i>
+          <a href="{{ page.project1.link }}" target="_blank">
+            {{ page.project1.caseStudyTitle }}
+          </a>
+        </h2>
+
         <div class="details">
           <a href="{{ page.project1.link }}" target="_blank">
             <img src="/assets/images/venmo/venmo.png" />
@@ -55,44 +62,68 @@
           <i class="fa fa-circle-o fa-lg"></i>{{ page.work1.company }}
         </h2>
         <p class="details">
-          Clients include: <b>{{ page.work1.clients }}</b>
+          Clients include: <b>{{ page.work1.clients }}</b><br>
+          Role: <b>{{ page.work1.role }}</b>
         </p>
       </section>
 
       <section class="timeline-block minor">
-        <div class="details">
+        <h2 class="title">
+          <i class="fa fa-circle"></i>
           <a href="{{ page.work1.carsharingLink }}" target="_blank">
-            <img src="/assets/images/ridecell/gig-carshare.png" />
+            {{ page.work1.carsharingTitle }}
+          </a>
+        </h2>
+
+        <div class="details">
+          <a href="{{ page.work1.gigCarsharingLink }}" target="_blank">
+            <img src="{{ page.work1.gigCarsharingLink }}" />
             <span class="image-title">{{ page.work1.gigCarsharingTitle }}</span>
           </a>
         </div>
 
         <div class="details">
-          <a href="{{ page.work1.carsharingLink }}" target="_blank">
-            <img src="/assets/images/ridecell/bmw-carshare.png" />
+          <a href="{{ page.work1.bmwCarsharingLink }}" target="_blank">
+            <img src="{{ page.work1.bmwCarsharingLink }}" />
             <span class="image-title">{{ page.work1.bmwCarsharingTitle }}</span>
           </a>
         </div>
+      </section>
+
+      <section class="timeline-block minor">
+        <h2 class="title">
+          <i class="fa fa-circle"></i>
+          <a href="{{ page.work1.ridesharingLink }}" target="_blank">
+            {{ page.work1.ridesharingTitle }}
+          </a>
+        </h2>
 
         <div class="details">
-          <a href="{{ page.work1.ridesharingLink }}" target="_blank">
-            <img src="/assets/images/ridecell/ridesharing-app.png" />
+          <a href="{{ page.work1.avaRidesharingLink }}" target="_blank">
+            <img src="{{ page.work1.avaRidesharingLink }}" />
             <span class="image-title">{{ page.work1.ridesharingAppTitle }}</span>
           </a>
         </div>
       </section>
 
       <section class="timeline-block minor">
-        <div class="details">
+        <h2 class="title">
+          <i class="fa fa-circle"></i>
           <a href="{{ page.work1.dispatchLink }}" target="_blank">
-            <img src="/assets/images/ridecell/carsharing-dispatch.png" />
+            {{ page.work1.dispatchTitle }}
+          </a>
+        </h2>
+
+        <div class="details">
+          <a href="{{ page.work1.dispatchCarsharingLink }}" target="_blank">
+            <img src="{{ page.work1.dispatchCarsharingLink }}" />
             <span class="image-title">{{ page.work1.dispatchCarsharingTitle }}</span>
           </a>
         </div>
 
         <div class="details">
-          <a href="{{ page.work1.dispatchLink }}" target="_blank">
-            <img src="/assets/images/ridecell/ridesharing-dispatch.png" />
+          <a href="{{ page.work1.dispatchRidesharingLink }}" target="_blank">
+            <img src="{{ page.work1.dispatchRidesharingLink }}" />
             <span class="image-title">{{ page.work1.dispatchRidesharingTitle }}</span>
           </a>
         </div>
@@ -104,7 +135,8 @@
           <i class="fa fa-circle-o fa-lg"></i>{{ page.work2.company }}
         </h2>
         <p class="details">
-          Clients include: <b>{{ page.work2.clients }}</b>
+          Clients include: <b>{{ page.work2.clients }}</b><br>
+          Role: <b>{{ page.work2.role }}</b>
         </p>
       </section>
 
@@ -118,21 +150,21 @@
 
         <div class="details">
           <a href="{{ page.work2.udnLink1 }}" target="_blank">
-            <img src="/assets/images/idean/ericsson-udn-1.png" />
+            <img src="{{ page.work2.udnLink1 }}" />
             <span class="image-title">{{ page.work2.udnTitle1 }}</span>
           </a>
         </div>
 
         <div class="details">
           <a href="{{ page.work2.udnLink2 }}" target="_blank">
-            <img src="/assets/images/idean/ericsson-udn-2.png" />
+            <img src="{{ page.work2.udnLink2 }}" />
             <span class="image-title">{{ page.work2.udnTitle2 }}</span>
           </a>
         </div>
 
         <div class="details">
           <a href="{{ page.work2.udnLink3 }}" target="_blank">
-            <img src="/assets/images/idean/ericsson-udn-3.png" />
+            <img src="{{ page.work2.udnLink3 }}" />
             <span class="image-title">{{ page.work2.udnTitle3 }}</span>
           </a>
         </div>
@@ -141,28 +173,26 @@
       <section class="timeline-block minor">
         <h2 class="title">
           <i class="fa fa-circle"></i>
-          <a href="{{ page.work2.vmwareLink }}" target="_blank">
-            {{ page.work2.vmwareTitle }}
-          </a>
+          {{ page.work2.vmwareTitle }}
         </h2>
 
         <div class="details">
           <a href="{{ page.work2.vmwareLink1 }}" target="_blank">
-            <img src="/assets/images/idean/vmware-1.png" />
+            <img src="{{ page.work2.vmwareLink1 }}" />
             <span class="image-title">{{ page.work2.vmwareProjectTitle }}</span>
           </a>
         </div>
 
         <div class="details">
           <a href="{{ page.work2.vmwareLink2 }}" target="_blank">
-            <img src="/assets/images/idean/vmware-2.png" />
+            <img src="{{ page.work2.vmwareLink2 }}" />
             <span class="image-title">{{ page.work2.vmwareProjectTitle }}</span>
           </a>
         </div>
 
         <div class="details">
           <a href="{{ page.work2.vmwareLink3 }}" target="_blank">
-            <img src="/assets/images/idean/vmware-3.png" />
+            <img src="{{ page.work2.vmwareLink3 }}" />
             <span class="image-title">{{ page.work2.vmwareProjectTitle }}</span>
           </a>
         </div>
